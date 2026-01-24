@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 st.title("Mercury Notebook No1")
-st.caption("a simple study of health activity and risk levels by your truly Magento Kubiza")
+st.caption("a simple study of health activity and risk levels by yours truly Magento Kubiza")
 df1 = pd.read_csv("HealthActivity.csv")
 df2 = pd.read_csv("HealthRisk.csv")
 st.subheader("Hours of sleep and heart rate dispayed by gender")
