@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import seaborn as sns
 st.title("Mercury Notebook No1")
 st.caption("a simple study of health activity and risk levels by your truly Magento Kubiza")
