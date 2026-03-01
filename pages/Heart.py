@@ -30,3 +30,20 @@ with tab3:
      st.caption("Test group C")
      figC = sns.jointplot(data=df1C, x="Blood Pressure (mmHg)", y="Cholesterol (mg/dL)", hue="Gender", kind="scatter")
      st.pyplot(figC)
+
+st.divider()
+
+tab4, tab5, tab6 = st.tabs(["Group A", "Group B", "Group C"])  
+with tab4:
+     st.caption("Test group A")
+     figD = sns.pairplot(df1A, hue="Treatment")
+     st.pyplot(figD)
+#dfD = dfB.drop(columns=["Chest Pain Type"])
+with tab5:
+     st.caption("Test group B")
+     figE = sns.pairplot(df1B, hue="Treatment")
+     st.pyplot(figE)
+with tab6:
+     st.caption("Test group C")
+     figF = sns.pairplot(df1C, hue="Treatment")
+     st.pyplot(figF)
